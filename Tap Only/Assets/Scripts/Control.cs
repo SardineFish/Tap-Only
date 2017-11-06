@@ -17,13 +17,7 @@ public class Control : MonoBehaviour {
     void Update () {
         if (Input.GetMouseButtonDown(0))
         {
-            var pos = camera.ScreenToWorldPoint(Input.mousePosition);
-            Ray2D ray = new Ray2D(new Vector2(pos.x, pos.y), Vector2.zero);
-            if (Physics2D.Raycast(ray.origin, ray.direction))
-            {
-                GetComponent<Rigidbody2D>().AddForceAtPosition(Force, pos,ForceMode2D.Impulse);
-            }
-            var x = 0;
+            
         }
 	}
 
